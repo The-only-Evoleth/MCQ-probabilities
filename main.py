@@ -1,18 +1,6 @@
-#to calculate factorials 
-def factorial(num):
-    num = abs(round(num))
-    if num>0:
-        for i in range(1, num):
-            num *= i
-        return num
-    elif num == 0:
-        return 1
+from factorial import factorial
+from variables import *
 
-#variables
-mcq_num = 20
-cor_ans_per_mcq = 1 #if there are 4 options per mcq,1 is correct option(usually)
-wrg_ans_per_mcq = 3 #if there are 4 options per mcq,3 are wrong options(usually)
-min_cor_ans = 8
 
 def main():
     total_combs = 0
